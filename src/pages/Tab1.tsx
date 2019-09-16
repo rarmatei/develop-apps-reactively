@@ -8,6 +8,7 @@ import {
   IonHeader,
   IonIcon,
   IonItem,
+  IonFooter,
   IonLabel,
   IonList,
   IonListHeader,
@@ -25,7 +26,7 @@ import {
 } from "../services/Extensions";
 
 const loadingObservable = timer(6000).pipe(showLoadingStatus());
-const longObs = timer(12000).pipe(showLoadingStatus());
+const longObs = timer(9999999).pipe(showLoadingStatus());
 
 const Tab1: React.FunctionComponent = () => {
   const doWork = () => {
@@ -88,10 +89,10 @@ const Tab1: React.FunctionComponent = () => {
             <IonLabel>Theme Your App</IonLabel>
           </IonItem>
         </IonList>
-        <div style={{ marginTop: "74px" }}>
-          <ProgressbarExample></ProgressbarExample>
-        </div>
       </IonContent>
+      <IonFooter mode={"ios"} translucent={true}>
+        <ProgressbarExample></ProgressbarExample>
+      </IonFooter>
     </>
   );
 };

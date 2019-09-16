@@ -24,6 +24,7 @@ import {
 import { initLoadingBar } from "./LoadingBarService";
 
 //don't make this into a class, make it into a simple module
+
 class Service {
   private _loadStarts = new Subject();
   private _loadEnds = new Subject();
