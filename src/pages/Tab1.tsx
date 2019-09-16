@@ -26,7 +26,7 @@ import {
 } from "../services/Extensions";
 
 const loadingObservable = timer(6000).pipe(showLoadingStatus());
-const longObs = timer(9999999).pipe(showLoadingStatus());
+const longObs = timer(12000).pipe(showLoadingStatus());
 
 const Tab1: React.FunctionComponent = () => {
   const doWork = () => {
