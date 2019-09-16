@@ -1,4 +1,3 @@
-
 /* Ionic Variables and Theming. For more information, please see
 // https://beta.ionicframework.com/docs/theming/
 // The app direction is used to include
@@ -17,6 +16,20 @@
 // check out our color generator:
 // https://beta.ionicframework.com/docs/theming/color-generator
 */
+
+ion-progress-bar {
+  height: 120px !important;
+}
+
+/* .buffer-circles {
+  background-size: 30px 50px !important;
+}
+
+@keyframes buffering {
+  to {
+    transform: translateX(-30px) !important;
+  }
+} */
 
 :root {
   --ion-color-angular: #ac282b;
